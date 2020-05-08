@@ -1,12 +1,12 @@
-# Algoritmo para mostar o Circuito Eureliano de um grafo direcionado ou não direcionado, em JAVA
+# Algoritmo para mostar o Circuito Euleriano de um grafo direcionado ou não direcionado, em JAVA
 
 Os grafos são representados por um Map<String, String[]>, onde a chave é o nome do vertice e o array representa as arestas que esse vértice possui.
 
 Para representar os grafos não-direcionados as arestas são iguais as do direcionado porém acrescentando uma aresta a mais de volta, o algoritmo já sabe que não se deve acrescentar arestas repetidas.
 
-Para dizer se o grafo direcionado é eureliano verificamos se não há vértices disconexos e se nenhum vértice tem mais graus de saída do que de entrada e vice-versa, ou seja, tem o mesmo grau de saída e entrada.
+Para dizer se o grafo direcionado é euleriano verificamos se não há vértices disconexos e se nenhum vértice tem mais graus de saída do que de entrada e vice-versa, ou seja, tem o mesmo grau de saída e entrada.
 
-Para dizer se o grafo não-direcionado é eureliano verificamos se não há vértices disconexos e se nenhum vértice possui grau ímpar.
+Para dizer se o grafo não-direcionado é euleriano verificamos se não há vértices disconexos e se nenhum vértice possui grau ímpar.
 
 Para montar o circuito sempre começamos pelo vértice de maior grau, no caso não-direcionado, ou de maior grau de saída, no caso direcionado, depois percorremos cada aresta removendo-as e colocando-as em uma pilha que representa o caminho percorrido.
 
